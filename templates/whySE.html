@@ -58,14 +58,14 @@
       <li class="nav-item">
           <a class="nav-link" href="{{ url_for('static', filename="css/images/Resume.pdf") }}">Resume</a>
       </li>
-      <!-- <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('static', filename="css/images/refs.pdf") }}">References</a>
-      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="{{  url_for('hobbies') }}">Hobbies & Interests</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('whySE') }}">Why Software Engineering?</a>
       </li>
     </ul>
   </div>
@@ -74,31 +74,39 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1>Meet Austin Faulkner: Miscellania</h1>
-      <p><i>I give most credit to the saturation method--do everything, do it all at once, and do it every minute you can possibly spare--the best way of learning there is (172).</i>
-      <blockquote><center>- Paul Halmos, "I Want to Be a Mathematician," Springer-Verlag: New York, 1985.</center></blockquote>
+    <h1>How I Came to Software Engineering</h1>
+      <p><i>The value of a problem is not so much in coming up with the answer as in the ideas and attempted ideas it forces on the would-be solver (viii).</i>
+      <blockquote><center>- I. N. Herstein, "Topics in Algebra," 2nd Ed. John Wiley & Sons: New York, 1975.</center></blockquote>
       </p>
   </div>
 </div>
 
 <div class="container" style="margin-top:20px">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-8">
       <h5>About Me</h5>
       <div class="fakeimg">
-          <img src="{{ url_for('static', filename='css/images/austinfaulkner.jpg') }}" class="img-fluid img-thumbnail" alt="Austin Faulkner"><!-- width="324" height="432">-->
+          <img src="{{ url_for('static', filename='css/images/linkedin.jpg') }}" class="img-fluid img-thumbnail" alt="Austin Faulkner"><!-- width="324" height="432">-->
         </div>
 
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-        <hr />I started coding not long ago--about 2.5 years ago. I became interested in coding
-        during my Vanderbilt University physics internship when we coded in Fortran. The attraction I suppose is that it was
-        tidy and, once understood, it all made logical sense. I've been interested in logic and the roles it plays in everything
-        from everyday reasoning, to mathematical proofs, to reasoning through a physics problem (itself built on math and physics intuition), to discovering the <b>foundation of computability itself</b>.</p>
+        <hr />
+        <p>
+          First of all, I love learning and problem-solving.  I took a philosophy of science course when I was a junior at Abilene Christian University, and it changed my life. It's why I am doing what I do now--working in the sciences.
+          There, I majored in Philosophy, Linguistics (with a computational focus), and English Composition and Literature. My love of natural languages and critical thinking brought me to a natural reorientation. The languages of mathematics and computer science suddenly came into view.
+          Through the philosophy of science course, it became abundantly clear to me that mathematics is the essential language by which physics, engineering, and computer science are done.
+          I recall walking through the library and perusing the mathematics and physics journals fundamentally curious about how the authors were speaking to one another through the vehicle of symbols, deduction, and structure. Somehow there was some semantic exchange.
+          There, I discovered Div, Grad, and Curl, all of which are essential to the language electrodynamics. I found groups, representations, symmetries, rings, and fields. I also found the real continuum on which real analysis dances and plays.
+          And there were Gödel and Cantor's proofs-- the former having to do with the inherent incompleteness in mathematics and the other having to do with the very unintuitive idea that there is an infinity of infinities, each with differing sizes. Wrap your head around that.
+          It became very apparent to me that what I needed to be doing was learning to speak and use these languages. The transition into mathematics and from there into computer science was very natural indeed. And I am having a brilliant time exploring the vistas each offers.
+          In particular,  I am exhilarated by the prospect of a lifetime of practical contribution in the fields I adore most. Being the life-long learner that I am, my motto is: "Experiment. Fail. Learn! Repeat. Succeed." <!--May I do so for the duration of my human experience!-->
+        </p>
 
     </div>
-    <div class="col-sm-8">
-        <p>My avatar in the navbar is of Kurt Gödel in the days when he would walk around the Institute of Advanced Study at Princeton with
+    <div class="col-sm-4">
+      <b>TO BE CONTINUED . . . 04/29/22</b>
+        <!-- <p>My avatar in the navbar is of Kurt Gödel in the days when he would walk around the Institute of Advanced Study at Princeton with
         the great Einstein. Jim Holt writes in his, "When Einstein Walked with Gödel," that Einstein is known for having said he comes to work
         just so he can talk to Gödel. And so they did. They walked and talked. (See picture).</p>
         <br />
@@ -119,7 +127,7 @@
             <p>On my resume, you find will a lot about my intellectual journey. You'll have also find the usual suspects--for instance, work history,
             education, accolades, etc. Nevertheless, I've also provided an abbreviated version of each of these facets of my curiosity in the navbar tabs above.</p>
             <p>In the meantime, I've spent the last 3-4 years wresting my journey down from the proverbial aether into a much more satisfyingly terrestrial and practical domain of interests.
-            And, wow, can I say I'm loving it! I simply cannot wait to work as a software engineer.</p>
+            And, wow, can I say I'm loving it! I simply cannot wait to work as a software engineer.</p> -->
     </div>
   </div>
 </div>
@@ -141,14 +149,14 @@
       <li class="nav-item">
           <a class="nav-link" href="{{ url_for('static', filename="css/images/Resume.pdf") }}">Resume</a>
       </li>
-      <!-- <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('static', filename="css/images/refs.pdf") }}">References</a>
-      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="{{  url_for('hobbies') }}">Hobbies & Interests</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('whySE') }}">Why Software Engineering?</a>
       </li>
     </ul>
   </div>

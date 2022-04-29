@@ -26,7 +26,10 @@ def hobbies():
 def projects():
     return render_template('projects.html')
 
+@app.route('/whySE')
+def whySE():
+    return render_template('whySE.html')
+
 
 if __name__ == '__main__':
     app.run()
-
