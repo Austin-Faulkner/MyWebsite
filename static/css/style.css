@@ -1,0 +1,36 @@
+h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: Courier;
+  color: #6495ED;
+  /*background-color: rgb(185, 179, 175);*/
+}
+
+body {
+   font-family: Courier;
+   background-color: rgb(185, 179, 175);
+}
+
+h2, h3, h4 {
+   color: #00FFFF;
+}
+
+h5 {
+    color: #00FFFF;
+    font-size: 20px;
+}
+
+.responsive {
+  width: 25%;
+  height: auto;
+}
+
+.responsive02 {
+  width: 35%;
+  height: auto;
+}
+
+.responsiveGodel {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Latest compiled and minified CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Popper JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!--Latest compiled Javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+
+  .fakeimg {
+    height: 50px;
+    background: rgb(185, 179, 175);
+  }
+
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    div {
+        text-align: center;
+    }
+
+
+</style>
+    <title>Projects</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<a class="navbar-brand" href="/">
+    <img src="{{ url_for('static', filename="css/images/kurt_godel.jpg") }}" alt="Logo" style="width:40px;">
+  </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('static', filename="css/images/desk.jpg") }}"><span style="color: #00FFFF">My favorite work motto: EXPERIMENT. FAIL. LEARN! REPEAT. SUCCEED.</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('education') }}">Education</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('static', filename="css/images/Resume.pdf") }}">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{  url_for('hobbies') }}">Hobbies & Interests</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <div style="text-align: center;">
+        <br />
+        <h1>Some Favorite Projects</h1>
+        <p><i>I will, in fact, claim that the difference between a bad programmer and a good one is whether he considers his code or his <br/>
+              data structures more important. Bad programmers worry about the code. Good programmers worry about data structures and their relationships.</i> <blockquote><center>- Linus Torvalds (creator of Linux)</center></blockquote></p>
+        <!-- <p><i>We must always change, renew, rejuvenate ourselves; otherwise, we harden.</i> <blockquote><center>- Johann Wolfgang von Goethe</center></blockquote></p> -->
+        <hr/>
+        <h6>
+          Linus Torvalds (center)
+        </h6>
+            <hr/>
+            <div style="text-align: center;">
+            <img src="{{ url_for('static', filename='css/images/linus.jpeg') }}" class="img-fluid img-thumbnail" title="Linus Torvalds" alt="Linus">
+            </div>
+            <hr/>
+            <p>
+              (In progress . . . 04/22/22)
+            </p>
+            <hr/>
+          <h5>
+            <span style="font-size: 172%; "><b>AustinDrinks</b></span>
+          </h5>
+        <hr/>
+        <p>
+          <font size="+2">A Demonstration of the Swift iOS <b>AustinDrinks</b> application I built for fun!</font>
+        </p>
+          Wanting to try a new distillery or winery one day while driving in Austin, my wife and I found a <i>use case</i> for an app that provides the following:
+          <br/>
+           <blockquote>
+             <div style="text-align: center;">
+               AustinDrinks provides a one-stop-shop for a local, adult-craft-beverage experience deep in the heart of Texas. The app helps users find and explore breweries, <br/>
+               distilleries, and wineries in Austin and its surrounding areas. Austin and its surrounding areas offer a rich variety of options, and, whether you're a local or <br/>
+               a visitor, the goal of AustinDrinks is to help one narrow down one's search for the perfect craft-beverage experience!
+               <br/>
+               <br/>
+               In short, this app is all about convenience, on-the-go, craft-beverage exploration and discovery. L'chaim!
+             </div>
+           </blockquote>
+        </p>
+
+            <video width="541" height="1005"  autoplay="autoplay" loop="loop" controls="controls">
+                <!-- MP4 must be first for iPad! -->
+              <source src="../demo.mp4" type="video/mp4"/><!-- WebKit video    -->
+              <source src="../demo.webm" type="video/webm"><!-- Chrome / Newest versions of Firefox and Opera -->
+{#              <source src="../media/austindrinks/demo.ogg" type="video/ogg" /><!-- Firefox / Opera -->#}
+            </video>
+        </div>
+        <br/>
+        <br/>
+    </div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<a class="navbar-brand" href="/">
+    <img src="{{ url_for('static', filename="css/images/kurt_godel.jpg") }}" alt="Logo" style="width:40px;">
+  </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('education') }}">Education</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('static', filename="css/images/Resume.pdf") }}">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{  url_for('hobbies') }}">Hobbies & Interests</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</body>
+</html>

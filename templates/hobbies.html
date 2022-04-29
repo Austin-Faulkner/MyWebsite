@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Latest compiled and minified CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--Popper JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!--Latest compiled Javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+
+  .fakeimg {
+    height: 50px;
+    background: rgb(185, 179, 175);
+  }
+
+    h1 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    div {
+        text-align: center;
+    }
+
+
+</style>
+    <title>Hobbies</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<a class="navbar-brand" href="/">
+    <img src="{{ url_for('static', filename="css/images/kurt_godel.jpg") }}" alt="Logo" style="width:40px;">
+  </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('static', filename="css/images/desk.jpg") }}"><span style="color: #00FFFF">My favorite work motto: EXPERIMENT. FAIL. LEARN! REPEAT. SUCCEED.</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('education') }}">Education</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('static', filename="css/images/Resume.pdf") }}">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{  url_for('hobbies') }}">Hobbies & Interests</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<center>
+    <center>
+        <br />
+        <h1>My Hobbies & Interests</h1>
+        <p><i>One must always allow for alternative theories.</i> <blockquote><center>- Richard Feynman, <q>Meaning of It All</q>, pg. 6</center></blockquote></p>
+        <p><i>We must always change, renew, rejuvenate ourselves; otherwise, we harden.</i> <blockquote><center>- Johann Wolfgang von Goethe</center></blockquote></p>
+        <hr/>
+    <h6>Richard Feynman Giving One of His Famous Lectures in Physics (left); <br />
+        Alan Turing, father of modern computer science (right)</h6>
+        <hr/>
+        <center>
+        <img src="{{ url_for('static', filename='css/images/feynman.jpg') }}" class="img-fluid img-thumbnail" alt="feynman">
+        <!-- <img src="{{ url_for('static', filename='css/images/feynman.jpg') }}" class="responsive img-thumbnail" alt="feynman"> -->
+        <img src="{{ url_for('static', filename='css/images/turing.jpg') }}" class="responsive img-thumbnail" alt="turing">
+        <!-- <br /> -->
+        </center>
+        <hr/>
+        <p>
+          My hobbies and interests for the past 15 years have been mostly in mathematics and physics. But about 6 years ago (2016) I started thinking <br/>
+          deeply about computational problems. The promises of machine learning, quantum computing, and <i>solutions programming</i> started to fill my mind. <br/>
+          As such I started thinking seriously about becoming a software engineer in an interesting field which would allow for daily stimulation and challenges. <br/>
+          <i>It's vital to not only <b>love what you do</b> but also to <b>be challenged intellectually</b> by what you do</i>. A degree in computer science offers <br/>
+          a window into this very realistic possibility.
+          <br/>
+          <br/>
+          I love to read and learn. Critical thinking is an absolute pleasure. I enjoy working through proofs and thinking deeply about seemingly trivial<br/>
+          matters such as the Triangle Inequality, the square root of 2, Euler's identity, and things like what is "mass" <i>really</i> (?!?). I also really enjoy the deep stuff like <br/>
+          complex analysis, real analysis, vector calculus, symmetries, and what have you. Mathematics takes an immense amount of time to learn and to become proficient in. So does<br/>
+          software engineering (SE), except in the case of SE one learns islands of expertise <i>much more</i> quickly. For example, should one choose, one can pick up the <br/>
+          syntax of a programming langauge in one day. This doesn't mean one is then proficient in the language; but, it does mean that one now has the tools required <br/>
+          to begin creating beautiful applications. And what's especially fun about making applications is, unlike mathematical proofs, one can see the application's results <br/>
+          "instantaneously". Watch it compile--or fail--and one immediately learns something new. That feeling is uniquely gratifying. What's also great about SE is the team work <br/>
+          inherent to the discipline. <b>I really enjoy working with and learning from others. Iron sharpens iron.</b>
+          <br/>
+          <br/>
+          Last but certainly not least, I like hiking and camping with my wife and pit/basset-hound mix named Hurley. I love to laugh, and I love my family.
+        </p>
+        <hr/>
+          <br />
+          <!-- <br /> -->
+            <img src="{{ url_for('static', filename='css/images/Jessica.jpg') }}" class="responsive img-thumbnail" title="My lovely wife, Jessica" alt="wife" align="center">
+            <img src="{{ url_for('static', filename='css/images/goofy.jpg') }}" class="responsive img-thumbnail" title="This is me being goofy and having fun." alt="wife" align="center">
+            <img src="{{ url_for('static', filename='css/images/momAndJ.jpg') }}" class="responsive img-thumbnail"  title="My mom and Jessica at a New Year's Eve celebration" alt="wife and mom" align="center">
+          <br />
+          <br />
+        <hr/>
+        <!-- <p> -->
+<h5>
+  <font size="+3">Excellent Websites</font>
+</h5>
+        <hr/>
+        </center>
+      <p>
+        <font size="+2">Some programming, mathematics, and physics websites I cherish.</font>
+      </p>
+      <font size="+1">
+      <ul class="nav nav-pills flex-column">
+        <li>
+            <a href="https://refactoring.guru/design-patterns">Refactoring Guru's Design Patterns</a>
+        </li>
+            <a href="https://www.w3schools.com/">W<sup>3</sup> Schools</a>
+        </li>
+          <a href="https://leetcode.com/problemset/all/">leetcode</a>
+        </li>
+          <a href="https://www.hackerrank.com/">HackerRank</a>
+        </li>
+          <a href="https://www.geeksforgeeks.org/">geeksforgeeks</a>
+        </li>
+          <a href="https://proofwiki.org/wiki/Main_Page">proof wiki</a>
+        </li>
+          <a href="https://math.ucr.edu/home/baez/">John Baez's Webpage</a>
+        </li>
+          <a href="https://terrytao.wordpress.com/?blogsub=confirming#subscribe-blog">Terry Tao's Webpage</a>
+        </li>
+          <a href="https://philosophy.fas.harvard.edu/people/edward-j-hall">Edward Hall's Webpage</a>
+        </li>
+      </ul>
+      </font>
+
+      <hr/>
+<h5>
+<font size="+3">Excellent Books</font>
+</h5>
+      <hr/>
+      <p>
+        <font size="+2">Some programming, mathematics, and physics books I cherish.</font>
+      </p>
+      <font size="+1">
+        <ul class="nav nav-pills flex-column">
+          <li>
+            <a href="https://www.amazon.com/Theory-Justice-Revised-Belknap-dp-0674000773/dp/0674000773/ref=mt_other?_encoding=UTF8&me=&qid=1649855277">"A Theory of Justice", John Rawls</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Justice-Fairness-Restatement-John-Rawls/dp/0674005112/ref=sr_1_1?keywords=justice+as+fairness&qid=1649855730&s=books&sprefix=justice+as+%2Cstripbooks%2C85&sr=1-1">"Justice as Fairness", John Rawls</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Conscious-Mind-Search-Fundamental-Philosophy/dp/0195117891/ref=sr_1_1?keywords=the+conscious+mind+david+chalmers&qid=1649855779&s=books&sprefix=The+conscious+min%2Cstripbooks%2C80&sr=1-1">"The Conscious Mind", David Chalmers</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Critique-Reason-Cambridge-Works-Immanuel/dp/0521657296/ref=sr_1_4?crid=2KVFDNCV8LU63&keywords=critique+of+pure+reason+immanuel+kant&qid=1649855958&s=books&sprefix=critique+of+pure+reason+immanuel+kant%2Cstripbooks%2C93&sr=1-4">"Critique of Pure Reason", Immanuel Kant</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Classical-Dynamics-Particles-Systems-Thornton/dp/0534408966/ref=sr_1_1?keywords=classical+dynamics+thornton&qid=1649856123&s=books&sprefix=classical+dy%2Cstripbooks%2C87&sr=1-1">"Classical Dynamics", Stephen T. Thornton & Jerry B. Marion</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Engineering-Software-Products-Ian-Sommerville/dp/013521064X/ref=sr_1_3?keywords=engineering+software+products&qid=1649856296&s=books&sprefix=engineering+sof%2Cstripbooks%2C90&sr=1-3">"Engineering Software Products", Ian Sommerville</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Labyrinth-Thought-History-Theory-Mathematics/dp/3764383496/ref=sr_1_1?keywords=labyrinth+of+thought&qid=1649856503&s=books&sprefix=Labyrithn+of+thought%2Cstripbooks%2C79&sr=1-1">"Labyrinth of Thought", José Ferreirós</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Plato-Republic-Books-Classical-Library/dp/067499650X/ref=sr_1_1?crid=3ER7HLJMY4IK4&keywords=republic+plato+loeb&qid=1649857032&s=books&sprefix=repulic+plato+loeb%2Cstripbooks%2C80&sr=1-1">"Republic", Plato (In <i>Classical Greek</i>)</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Plato-Euthyphro-Apology-Classical-Library/dp/0674996879/ref=sr_1_1?crid=1WLS3NY93TOJT&keywords=loeb+euthyphro+Plato&qid=1649857226&s=books&sprefix=loeb+euthyphro+plato%2Cstripbooks%2C81&sr=1-1">"Euthyphro, Apology, Crito, Phaedo", Plato (In <i>Classical Greek</i>)</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Contingency-Irony-Solidarity-Richard-Rorty/dp/0521367816/ref=sr_1_1?keywords=contingency+irony+and+solidarity&qid=1649857559&s=books&sprefix=contingen%2Cstripbooks%2C101&sr=1-1">"Contingency, irony, and solidarity", Richard Rorty</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/dp/0132350882/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=8434daf3e487df1e8f2edba3e416eae3&hsa_cr_id=8875635360201&pd_rd_plhdr=t&pd_rd_r=dd74e0f0-7365-468a-a9b4-ac9d36cf6f1a&pd_rd_w=EGAp3&pd_rd_wg=p7Xsi&ref_=sbx_be_s_sparkle_mcd_asin_0_img">"Clean Code", Robert C. Martin (reading in progress)</a>
+          </li>
+          <li>
+            <a href="https://www.amazon.com/Professional-C-Marc-Gregoire/dp/1119695406/ref=sr_1_1?keywords=professional+c%2B%2B%22+by+marc+gregoire&qid=1649856769&s=books&sprefix=professsional+c%2B%2B%2Cstripbooks%2C87&sr=1-1">"Professional C++", Marc Gregoire (reading in progress)</a>
+          </li>
+      </font>
+    <center />
+
+    <hr/>
+      <h5>
+        <font size="+3">Computer Vision (CV) with Detectron2 and PyTorch</font>
+      </h5>
+    <hr/>
+    <p>
+      <font size="+2">Some YouTube videos of some of the research I conducted in an ML course at Texas State University</font>
+    </p>
+
+    <p>
+      <b>This video</b> captures Guadalupe Street, right next to The University of Texas at Austin. Here, I've applied a neueral network architecture (a convolutional neural<br/>
+      network, or CNN) to analyze the semantic segmentation (also called Panoptic Segmentation) you see in the computer's line of sight. The video analysis also embeds<br/>
+      an Instance Segmentation wherein the CNN is able to identify cars, trucks, people, and traffic lights with a real-time probability estimation. Basically, the computer <br/>
+      vision techniques are attempting to identify anything an automated vehicle would want to be crucially aware of while cruising down the road.
+    </p>
+    <br/>
+    <iframe width="820" height="715"
+      src="https://www.youtube.com/embed/VXlUuYxoALA?autoplay=1&mute=1&loop=1&playlist=VXlUuYxoALA" allowfullscreen>
+    </iframe>
+    <br/>
+    <br/>
+      <p>
+        In <b>this video</b>, the CNN is applying the same techniques, but, in addition, I've applied Keypoint Detection (KD). The Keypoint Detection is hardly noticeable <br/>
+        in the video given there are few subjects <i>in the computer's line of sight</i> to which to apply KD. But if you look closely to the billboard and the people walking, <br/>
+        you'll find a hint of what KD is up to. I'll post another video which strictly showcases KD and it's unique analytic benefits down the line. To summarize though, <br/>
+        the benefit of KD is the CV ability to detect <i>animated behavior</i>. So, for instance, if someone is crossing the street at a certain speed, the CV picks up on <br/>
+        the angular movements of the individual and can potentially calculate the individual's velocity, which is important if the automated vehicle is to know the rate at <br/>
+        which the vehicle should come to a stop. The titles of the <b>next three videos</b> will indicate which isolated methods are used in the experiment. What's nice about <br/>
+        the three remaining videos is they isolate the techniques demonstrating each's usefulness. (More to come.)
+      <p/>
+    <br/>
+    <iframe width="820" height="715"
+      src="https://www.youtube.com/embed/tb9cjL30QiY?autoplay=1&mute=1&loop=1&playlist=tb9cjL30QiY" allowfullscreen>
+    </iframe>
+      <br/>
+    <iframe width="820" height="715"
+      src="https://www.youtube.com/embed/yRG0Dn28nhQ?autoplay=1&mute=1&loop=1&playlist=yRG0Dn28nhQ" allowfullscreen>
+    </iframe>
+      <br/>
+    <iframe width="820" height="715"
+      src="https://www.youtube.com/embed/rVmo8NBmymg?autoplay=1&mute=1&loop=1&playlist=rVmo8NBmymg" allowfullscreen>
+    </iframe>
+      <br/>
+    <iframe width="820" height="715"
+      src="https://www.youtube.com/embed/BvuOCEyky8o?autoplay=1&mute=1&loop=1&playlist=BvuOCEyky8o" allowfullscreen>
+    </iframe>
+
+
+    <!-- <hr/>
+    <h5>
+      <font size="+3">The Excellent Hurley</font>
+    </h5>
+    <hr/>
+
+    <video width="440" height="560" controls>
+      <source src="hurley.mp4" type="video/mp4">
+      <source src="hurley.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video> -->
+    <br />
+    <br />
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<a class="navbar-brand" href="/">
+    <img src="{{ url_for('static', filename="css/images/kurt_godel.jpg") }}" alt="Logo" style="width:40px;">
+  </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('education') }}">Education</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('static', filename="css/images/Resume.pdf") }}">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{  url_for('hobbies') }}">Hobbies & Interests</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+</body>
+</html>
