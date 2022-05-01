@@ -124,10 +124,20 @@
            In short, this app is all about convenience, on-the-go craft-beverage exploration and discovery. Cheers!
          </div>
         </p>
-         <video width="682" height="1310" controls autoplay allowfullscreen>
+        
+         <!-- <video width="682" height="1310" controls autoplay allowfullscreen>
            <source src="/MyWebsite/demo.mp4" type="video/mp4">
            <source src="/MyWebsite/demo.webm" type="video/webm">
            Your browser does not support the video tag.
+         </video> -->
+
+         <video width="682" height="1310" controls autoplay allowfullscreen>
+             <!-- MP4 must be first for iPad! -->
+             <source src="demo.MP4" type="video/mp4" />
+             <!-- WebKit video    -->
+             <source src="demo.webm" type="video/webm" />
+             <!-- Chrome / Newest versions of Firefox and Opera -->
+             <source src="demo.OGV" type="video/ogg" /><!-- Firefox / Opera -->
          </video>
 
         <!-- <iframe width="682" height="1310"
