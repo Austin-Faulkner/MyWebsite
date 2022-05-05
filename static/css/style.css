@@ -21,7 +21,8 @@ h5 {
 }
 
 .responsive {
-  width: 25%;
+  /* width:25%; */
+  width:15%;
   height: auto;
 }
 
